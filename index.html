@@ -11,15 +11,21 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+  />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a class="logo" href="./index.html"
+    <header class="header">
+    <div class="container-header container">
+      
+        <a class="logo" href="./index.html"
         >Web<span class="dark-theme">Studio</span></a
       >
-      <nav class="navigation">
-        <ul class="navigation-list">
+        <nav class="navigation">
+          <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link current" href="./index.html">Студия</a>
           </li>
@@ -43,18 +49,19 @@
           >
         </li>
       </ul>
+       </div>
     </header>
     <main>
       <!--Герой-->
-      <section class="section">
-        <div class="title">
+      <section class="section-hero">
+        <div class="container title">
           <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
           <button class="button-hero" type="button">Заказать услугу</button>
         </div>
       </section>
       <!--Особенности работы-->
-      <section class="section">
-        <div class="peculiarities">
+      <section class="section section-work">
+        <div class="container peculiarities">
           <h2 class="visually-hidden">Особенности работы</h2>
           <ul class="peculiarities-list">
             <li class="peculiarities-item">
@@ -90,7 +97,7 @@
       </section>
       <!--Чем мы занимаемся-->
       <section class="section">
-        <div class="work">
+        <div class="container work">
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-item">
@@ -114,8 +121,8 @@
         </div>
       </section>
       <!--Наша команда-->
-      <section class="section">
-        <div class="team">
+      <section class="section section-team">
+        <div class="container team">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
@@ -124,8 +131,10 @@
                 alt="Игорь Демьяненко"
                 width="270"
               />
+              <div class="sign">
               <h3 class="team-member">Игорь Демьяненко</h3>
               <p class="team-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -133,8 +142,10 @@
                 alt="Ольга Репина"
                 width="270"
               />
+              <div class="sign">
               <h3 class="team-member">Ольга Репина</h3>
               <p class="team-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -142,8 +153,10 @@
                 alt="Николай Тарасов"
                 width="270"
               />
+              <div class="sign">
               <h3 class="team-member">Николай Тарасов</h3>
               <p class="team-text">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -151,8 +164,10 @@
                 alt="Михаил Ермаков"
                 width="270"
               />
+              <div class="sign">
               <h3 class="team-member">Михаил Ермаков</h3>
               <p class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -160,7 +175,7 @@
     </main>
     <!--Подвал-->
     <footer>
-      <div class="footer">
+      <div class="container footer">
         <a class="logo" href="./index.html"
           >Web<span class="white-theme">Studio</span></a
         >
